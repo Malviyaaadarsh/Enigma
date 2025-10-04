@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "title": "TensorFlow",
+    "description": "An open-source platform for machine learning to build and deploy ML-powered applications.",
+    "link": "https://www.tensorflow.org/",
+    "type": "Framework",
+    "icon": "https://upload.wikimedia.org/wikipedia/commons/2/2d/Tensorflow_logo.svg"
+  },
+  {
+    "id": 2,
+    "title": "PyTorch",
+    "description": "A deep learning framework providing flexibility and speed for AI research and production.",
+    "link": "https://pytorch.org/",
+    "type": "Framework",
+    "icon": "https://upload.wikimedia.org/wikipedia/commons/1/10/PyTorch_logo_icon.svg"
+  },
+  {
+    "id": 3,
+    "title": "Kaggle",
+    "description": "The largest community of data scientists and ML practitioners. Join competitions, explore datasets, and learn.",
+    "link": "https://www.kaggle.com/",
+    "type": "Platform",
+    "icon": "https://upload.wikimedia.org/wikipedia/commons/7/7c/Kaggle_logo.png"
+  },
+  {
+    "id": 4,
+    "title": "Hugging Face",
+    "description": "A hub for state-of-the-art natural language processing models, datasets, and tools.",
+    "link": "https://huggingface.co/",
+    "type": "Library",
+    "icon": "https://huggingface.co/front/assets/huggingface_logo-noborder.svg"
+  },
+  {
+    "id": 5,
+    "title": "Google AI Blog",
+    "description": "Official blog by Google AI with research, tutorials, and the latest advancements in AI/ML.",
+    "link": "https://ai.googleblog.com/",
+    "type": "Blog",
+    "icon": "https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg"
+  },
+  {
+    "id": 6,
+    "title": "Fast.ai",
+    "description": "A research group that makes deep learning more accessible with courses and libraries.",
+    "link": "https://www.fast.ai/",
+    "type": "Tutorial",
+    "icon": "https://avatars.githubusercontent.com/u/20402423?s=280&v=4"
+  }
+]

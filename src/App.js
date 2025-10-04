@@ -16,6 +16,8 @@ import Profile from './components/Profile/profile';
 import DiscussionPage from './components/Discussion/Discussion';
 import { ToastContainer } from 'react-toastify';
 import {AuthProvider} from './Context/AuthContext';
+
+
 function App() {
   return (
     <AuthProvider>
@@ -38,6 +40,7 @@ function App() {
           <Route path="/signup" element={<SignUpPage/>} />  
           <Route path="/profile" element={<Profile />} />
           <Route path="/discussion" element={<DiscussionPage />} />
+          
         </Routes>
         <ToastContainer />
       </div> 

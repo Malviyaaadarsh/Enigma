@@ -190,8 +190,8 @@ nav {
 
 .mobile-menu-icon i {
   color:#fff;
- padding: 1px 5px;
- margin-left: 90px;
+ padding: 0px 5px;
+ margin-left: 130px;
 }
 
 /* Mobile Menu */
@@ -336,4 +336,12 @@ nav {
 .profile-picture:hover {
   transform: rotateY(15deg) scale(1.2); 
   box-shadow: 0 0 20px rgba(58, 187, 134, 0.8); 
+}
+
+.mobile-menu-icon:focus,
+.mobile-menu-icon:active,
+.mobile-menu-icon:hover {
+  background: none !important;   /* no background on click, focus, hover */
+  outline: none;
+  box-shadow: none;
 }

@@ -1,93 +1,128 @@
-/* Event page container */
+/* Container */
 .events-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    
-    padding: 40px;
-    min-height: 100vh;
-    color: white;
-    font-family: 'Poppins', sans-serif;
-  }
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 20px;
+  font-family: 'Poppins', sans-serif;
+  color: #fff;
+  min-height: 100vh;
+}
+
+/* Heading */
+.events-heading {
+  font-size: 3rem;
+  color: #00d4ff;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
   
-  /* Heading */
-  .events-heading {
-    font-size: 3rem;
-    color: #00e6e6;
-    margin-bottom: 30px;
-    text-transform: uppercase;
-    letter-spacing: 3px;
-    text-shadow: 0 0 20px rgba(0, 230, 230, 0.7);
-  }
-  
-  /* Event cards grid */
-  .events-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
-    width: 100%;
-  }
-  
-  /* Individual event card */
-  .event-card {
-    background: rgb(33, 32, 32);
-    padding: 20px;
-    border-radius: 15px;
-    box-shadow: 0 0 20px rgba(0, 255, 255, 0.3);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    position: relative;
-    overflow: hidden;
-  }
-  
-  .event-card:hover {
-    transform: translateY(-10px) scale(1.05);
-    box-shadow: 0 0 30px rgba(0, 255, 255, 0.6);
-  }
-  
-  /* Card content */
-  .event-card-content h2 {
-    font-size: 1.8rem;
-    color: #00ffcc;
-    margin-bottom: 10px;
-    letter-spacing: 2px;
-  }
-  
-  .event-date {
-    font-size: 1.2rem;
-    color: #ff007f;
-    margin-bottom: 15px;
-  }
-  
-  .event-card-content p {
-    font-size: 1rem;
-    line-height: 1.6;
-  }
-  
-  /* Register button */
-  .register-btn {
-    background: linear-gradient(45deg, #00ffcc, #ff007f);
-    border: none;
-    padding: 10px 20px;
-    border-radius: 25px;
-    color: white;
-    font-size: 1rem;
-    cursor: pointer;
-    transition: background 0.3s ease, box-shadow 0.3s ease;
-  }
-  
-  .register-btn:hover {
-    background: linear-gradient(45deg, #00d4ff, #ff6600);
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
-  }
-  
-  /* Responsive styles */
-  @media (max-width: 768px) {
-    .events-heading {
-      font-size: 2rem;
-    }
-  
-    .register-btn {
-      padding: 8px 16px;
-    }
-  }
-  
+  animation: pulse 2s infinite;
+}
+
+/* Grid */
+.events-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 25px;
+  width: 100%;
+}
+
+/* Cards */
+.event-card {
+  background: rgb(25, 25, 25);
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(0, 212, 255, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeUp 0.6s forwards;
+}
+
+.event-card:nth-child(1) { animation-delay: 0.1s; }
+.event-card:nth-child(2) { animation-delay: 0.2s; }
+.event-card:nth-child(3) { animation-delay: 0.3s; }
+.event-card:nth-child(4) { animation-delay: 0.4s; }
+.event-card:nth-child(5) { animation-delay: 0.5s; }
+.event-card:nth-child(6) { animation-delay: 0.6s; }
+
+.event-card:hover {
+  transform: translateY(-10px) scale(1.05);
+  box-shadow: 0 0 35px rgba(0, 212, 255, 0.6);
+}
+
+/* Card Content */
+.event-card-content h2 {
+  font-size: 1.8rem;
+  color: #edf5f7;
+  margin-bottom: 10px;
+}
+
+.event-date {
+  font-size: 1.2rem;
+  color: #ff69b4;
+  margin-bottom: 15px;
+}
+
+.event-card-content p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+/* Countdown */
+.countdown {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #0e1110;
+
+  margin-bottom: 15px;
+}
+
+.countdown span {
+  background: linear-gradient(45deg, #00ffcc, #ff007f);
+  padding: 5px 10px;
+  border-radius: 10px;
+  margin: 0 3px;
+  display: inline-block;
+}
+
+/* Register Button */
+.register-btn {
+  background: linear-gradient(45deg, #6a0dad, #00d4ff);
+  border: none;
+  padding: 12px 25px;
+  border-radius: 25px;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  animation: pulseBtn 2s infinite;
+}
+
+.register-btn:hover {
+  background: linear-gradient(45deg, #ff007f, #00b0ff);
+  box-shadow: 0 0 12px rgba(255, 255, 255, 0.8);
+}
+
+/* Animations */
+@keyframes fadeUp {
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes pulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+}
+
+@keyframes pulseBtn {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .events-heading { font-size: 2rem; }
+  .register-btn { padding: 10px 20px; }
+}
