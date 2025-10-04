@@ -1,154 +1,158 @@
-/* Center the card on the page */
 .profile-page {
   display: flex;
   justify-content: center;
-  align-items: center;
-  height: 100vh;
-  
+  padding: 40px;
+  min-height: 100vh;
   font-family: 'Orbitron', sans-serif;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
 }
 
-/* Card styling */
-.profile-card {
-  height: auto;
-  max-width: 400px;
-  width: 90%;
-  background: rgba(10, 10, 10, 0.8); /* Dark translucent background */
-  border-radius: 15px;
-  border: 2px solid rgba(255, 255, 255, 0.2);
-  backdrop-filter: blur(15px);
-  box-shadow: 0 5px 30px rgba(0, 255, 255, 0.2); /* Neon glow */
-  padding: 25px 20px;
-  text-align: center;
-  color: #e5e5e5;
-  position: relative;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.profile-card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 8px 50px rgba(0, 255, 255, 0.6);
-}
-
-/* Animated glow border */
-.profile-card::before {
-  content: '';
-  position: absolute;
-  top: -5px;
-  left: -5px;
-  right: -5px;
-  bottom: -5px;
+.profile-card.glass {
+  width: 380px;
+  background: rgba(255, 255, 255, 0.05);
   border-radius: 20px;
-  background: linear-gradient(45deg, #00f2fe, #4facfe, #00f2fe);
-  z-index: -1;
-  filter: blur(15px);
-  opacity: 0.8;
+  padding: 25px;
+  text-align: center;
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(15px);
+  box-shadow: 0 8px 32px rgba(0, 255, 255, 0.1);
+  position: relative;
 }
 
-/* Profile image */
 .profile-image {
-  width: 150px;
-  height: 150px;
+  width: 140px;
+  height: 140px;
   border-radius: 50%;
-  object-fit: cover;
-  margin: 0 auto 15px;
-  border: 3px solid rgba(255, 255, 255, 0.4);
-  box-shadow: 0 0 20px rgba(0, 255, 255, 0.6); /* Neon glow for the image */
-  transition: transform 0.3s ease, border-color 0.3s ease;
+  border: 3px solid #00f2fe;
+  cursor: pointer;
+  margin-bottom: 15px;
+  transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .profile-image:hover {
-  transform: scale(1.1);
-  border-color: #00f2fe;
+  transform: scale(1.05);
+  box-shadow: 0 0 20px #00f2fe;
 }
 
-/* Welcome message */
-.welcome-message {
+.profile-name {
   font-size: 24px;
-  margin-bottom: 20px;
-  color: #ffffff;
   font-weight: bold;
-  text-transform: uppercase;
-  letter-spacing: 2px;
+  margin-bottom: 5px;
   background: linear-gradient(90deg, #4facfe, #00f2fe);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
-/* Profile details */
-.profile-details p {
-  margin: 10px 0;
+.welcome-msg {
+  margin-bottom: 20px;
   font-size: 16px;
   color: #bfbfbf;
-  line-height: 1.6;
 }
 
-.profile-details span {
-  font-weight: bold;
-  color: #ffffff;
+.contact-info p {
+  margin: 8px 0;
+  font-size: 14px;
+  color: #ddd;
 }
 
-/* Logout button */
-.profile-logout-button {
+.skills-section {
   margin-top: 20px;
-  padding: 12px 30px;
-  font-size: 16px;
-  background: linear-gradient(90deg, #00f2fe, #4facfe); /* Neon gradient */
-  color: #ffffff;
+  text-align: left;
+}
+
+.skills-section h3 {
+  margin-bottom: 10px;
+}
+
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 10px;
+}
+
+.skill-badge {
+  background: rgba(0, 242, 254, 0.2);
+  padding: 5px 10px;
+  border-radius: 12px;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.skill-badge button {
+  background: transparent;
   border: none;
-  border-radius: 25px;
+  color: #00f2fe;
   cursor: pointer;
-  box-shadow: 0 4px 15px rgba(0, 255, 255, 0.5);
-  transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.profile-logout-button:hover {
-  background: linear-gradient(90deg, #00e6e6, #3bb3ff);
-  transform: translateY(-3px);
-  box-shadow: 0 6px 25px rgba(0, 255, 255, 0.7);
+.skills-add {
+  display: flex;
+  gap: 5px;
 }
 
-/* Loading message */
-.loading-message {
-  font-size: 18px;
-  color: #8f8f8f;
-  text-shadow: 0 0 5px #00f2fe;
-  animation: pulse 1.5s infinite;
+.skills-add input {
+  flex: 1;
+  padding: 6px 10px;
+  border-radius: 12px;
+  border: none;
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
 }
 
-@keyframes pulse {
-  0%, 100% {
-      opacity: 0.7;
-  }
-  50% {
-      opacity: 1;
-  }
+.skills-add button {
+  padding: 6px 12px;
+  border-radius: 12px;
+  background: #00f2fe;
+  border: none;
+  color: #000;
+  cursor: pointer;
 }
 
-/* Responsive design */
-@media (max-width: 768px) {
-  .profile-card {
-      padding: 20px 15px;
-  }
+.action-bar {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+}
 
-  .profile-image {
-      width: 120px;
-      height: 120px;
-  }
+.action-bar button {
+  padding: 8px 16px;
+  border-radius: 12px;
+  border: none;
+  cursor: pointer;
+  background: linear-gradient(90deg, #00f2fe, #4facfe);
+  color: #000;
+  font-weight: bold;
+}
 
-  .welcome-message {
-      font-size: 20px;
-  }
+.logout-btn {
+  background: #ff4d4d !important;
+  color: #fff !important;
+}
 
-  .profile-details p {
-      font-size: 14px;
-  }
+.profile-progress {
+  margin: 15px 0;
+  height: 8px;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  position: relative;
+}
 
-  .profile-logout-button {
-      padding: 10px 20px;
-      font-size: 14px;
-  }
+.progress-bar {
+  height: 100%;
+  background: #00f2fe;
+  border-radius: 12px;
+  transition: width 0.3s;
+}
+
+.progress-bar + span {
+  display: block;
+  margin-top: 5px;
+  font-size: 12px;
+  color: #bfbfbf;
 }
