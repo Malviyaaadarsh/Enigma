@@ -205,3 +205,88 @@ i.active {
     text-shadow: 0 0 10px #00d4ff;
     cursor: pointer;
 }
+
+/* ----------------- MOBILE STYLING FOR SIGNUP PAGE ----------------- */
+@media screen and (max-width: 480px) {
+
+    /* Logo */
+    .signup-app-logo {
+        width: 100px;
+        height: 80px;
+        margin-top: 10rem;
+    }
+
+    /* Background */
+    .background {
+        width: 100%;
+        height: 350px;
+        top: 45%;
+    }
+
+    .background .signup-shape:first-child {
+        width: 150px;
+        height: 150px;
+        left: -60px;
+        top: -40px;
+    }
+
+    .background .signup-shape:last-child {
+        width: 150px;
+        height: 150px;
+        right: -60px;
+        bottom: -150px;
+    }
+
+    /* SignUp Form */
+    .signup-form {
+        width: 95%;
+        max-width: 400px;
+        height: auto;
+        padding: 25px 20px;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    
+    label {
+        font-size: 14px;
+    }
+
+    input {
+        height: 45px;
+        font-size: 13px;
+    }
+
+   
+
+    
+    button {
+        font-size: 16px;
+        padding: 12px 0;
+    }
+
+   .toggle-button {
+    width: 160px;
+    border-radius: 3px;
+    padding: 10px 0;
+    background: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+    /* SignUp / Login links */
+    .LogIn {
+        font-size: 1rem;
+    }
+
+    .login-link {
+        margin-top: 3px;
+        font-size: small;
+    }
+     form h3 {
+        font-size: 28px;
+        line-height: 32px;
+    }
+}
