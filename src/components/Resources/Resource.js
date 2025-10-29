@@ -16,6 +16,13 @@ const resources = [
     type: 'Framework',
     icon: 'https://upload.wikimedia.org/wikipedia/commons/1/10/PyTorch_logo_icon.svg',
   },
+    {
+    title: 'DeepML',
+    description: 'Practice Machine Learning and Data Science problems',
+    link: 'https://www.deep-ml.com/',
+    type: 'Platform',
+    icon: 'https://www.deep-ml.com/_next/image?url=%2Fdeepml-logo.jpeg&w=64&q=75',
+  },
   {
     title: 'Kaggle',
     description: 'The largest community of data scientists and ML practitioners. Join competitions, explore datasets, and learn.',

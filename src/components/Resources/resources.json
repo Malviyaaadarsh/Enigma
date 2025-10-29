@@ -17,6 +17,14 @@
   },
   {
     "id": 3,
+    "title": "DeepML",
+    "description": "Practice Machine Learning and Data Science problems",
+    "link": "https://www.deep-ml.com/",
+    "type": "Platform",
+    "icon": "https://www.deep-ml.com/_next/image?url=%2Fdeepml-logo.jpeg&w=64&q=75"
+  }, 
+  {
+    "id": 4,
     "title": "Kaggle",
     "description": "The largest community of data scientists and ML practitioners. Join competitions, explore datasets, and learn.",
     "link": "https://www.kaggle.com/",
@@ -24,7 +32,7 @@
     "icon": "https://upload.wikimedia.org/wikipedia/commons/7/7c/Kaggle_logo.png"
   },
   {
-    "id": 4,
+    "id": 5,
     "title": "Hugging Face",
     "description": "A hub for state-of-the-art natural language processing models, datasets, and tools.",
     "link": "https://huggingface.co/",
@@ -32,7 +40,7 @@
     "icon": "https://huggingface.co/front/assets/huggingface_logo-noborder.svg"
   },
   {
-    "id": 5,
+    "id": 6,
     "title": "Google AI Blog",
     "description": "Official blog by Google AI with research, tutorials, and the latest advancements in AI/ML.",
     "link": "https://ai.googleblog.com/",
@@ -40,7 +48,7 @@
     "icon": "https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg"
   },
   {
-    "id": 6,
+    "id": 7,
     "title": "Fast.ai",
     "description": "A research group that makes deep learning more accessible with courses and libraries.",
     "link": "https://www.fast.ai/",
