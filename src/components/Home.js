@@ -1,14 +1,29 @@
 import React from "react";
 import { motion } from "framer-motion"; // For animations
 import "./Home.css"; // Custom styles
-import Logo from '../Assets/Logo.png'; // Club logo
-import { FaLinkedin, FaDiscord, FaGithub, FaTwitter, FaInstagram, FaWhatsapp } from 'react-icons/fa'; // Font Awesome Icons
-import Rahul from '../Assets/Rahul.png'; // Example team image (replace with actual)
-import Priyanshu from '../Assets/Priyanshu.png';
-import Adarshsir from '../Assets/Adarshsir.png';
-import about from '../Assets/about.png';
-import Adarsh from '../Assets/Adarsh.png';
-import shreyansh from '../Assets/shreyansh.png';
+import Logo from "../Assets/Logo.png"; // Club logo
+import {
+  FaLinkedin,
+  FaDiscord,
+  FaGithub,
+  FaTwitter,
+  FaInstagram,
+  FaWhatsapp
+} from "react-icons/fa"; // Font Awesome Icons
+import Rahul from "../Assets/Rahul.png"; // Example team image (replace with actual)
+import Priyanshu from "../Assets/Priyanshu.png";
+import Adarshsir from "../Assets/Adarshsir.png";
+import oshika from "../Assets/oshika.jpeg";
+import about from "../Assets/aboutnew.png";
+import shreyansh from "../Assets/shreyanshp.png";
+import vedant from "../Assets/vedant.jpg";
+import jayesh from "../Assets/jayesh.jpg";
+import dummy from "../Assets/dummy.png";
+import aadarsh from "../Assets/adarsh.jpg";
+import rafiya from "../Assets/rafiya.jpg";
+import tanmay from "../Assets/tanmay.jpg";
+import tanu from "../Assets/tanu.jpg";
+import khushbu from "../Assets/khushbu.jpg";
 
 const Home = () => {
   return (
@@ -18,97 +33,177 @@ const Home = () => {
         {/* Logo Animation */}
         <motion.div
           className="logo-container"
-          initial={{ x: '-100vw' }}
-          animate={{ x: '0' }}
-          transition={{ type: 'spring', stiffness: 30, duration: 4 }}
+          initial={{ x: "-100vw" }}
+          animate={{ x: "0" }}
+          transition={{ type: "spring", stiffness: 30, duration: 4 }}
         >
           <img src={Logo} alt="Enigma Logo" className="cp-logo" />
           <div className="club-info">
             <h1 className="club-name">Enigma</h1>
             <p className="club-subtitle">AIML Club of LNCT</p>
-            <p className="club-tagline">A playground where ideas meet data — learn, build, and deploy intelligent systems.</p>
+            <p className="club-tagline">
+              A playground where ideas meet data — learn, build, and deploy
+              intelligent systems.
+            </p>
           </div>
         </motion.div>
       </section>
-      
+
       {/* About Us Section */}
-      <section className="about-us">
-        <div className="about-content">
+      <section className="about-us" id="about">
+        <div className="about-wrapper">
           <motion.div
-            className="about-animation"
-            initial={{ opacity: 0, y: -50 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 2 }}
-          > 
-            <h2>About Us</h2>
-            {/* Futuristic animation or image */}
-            <img src={about} alt="About Enigma Animation" />
+            className="about-image"
+            initial={{ opacity: 0, y: 40 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1.2, ease: "easeOut" }}
+            viewport={{ once: true }}
+          >
+            <img src={about} alt="About Enigma" />
           </motion.div>
-          <div className="about-text">
-            <br />
+
+          <motion.div
+            className="about-content"
+            initial={{ opacity: 0, y: 40 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1.2, delay: 0.2, ease: "easeOut" }}
+            viewport={{ once: true }}
+          >
+            <h2>About Us</h2>
             <p>
-              Enigma is a community of students passionate about Artificial Intelligence, Machine Learning and Data Science.
-              We focus on hands-on learning — workshops, projects, research, and hackathons — so members can build real-world
-              ML systems, understand algorithms, and collaborate across domains.
+              Enigma is a community of students passionate about Artificial
+              Intelligence, Machine Learning, and Data Science. We focus on
+              hands-on learning through workshops, projects, and hackathons,
+              empowering members to explore, create, and collaborate on
+              real-world AI innovations.
             </p>
-          </div>
+          </motion.div>
         </div>
       </section>
 
       {/* Upcoming Events Section */}
       <section className="events">
-        <h2>Upcoming Events</h2>
-        <br />
-        <br />
+        <h2 className="section-title">Upcoming Events</h2>
+
         <div className="event-cards">
-          <div className="event-card">
-            <h3>AI/ML Hackathon 2025</h3>
-            <br />
-            <p>Build models, deploy demos, and compete to solve real problems using AI. Teams, mentorship and prizes await.</p>
-            <br /><br />
-            <a href="#register" className="cta-button">Register Now</a>
-          </div>
-          <div className="event-card">
-            <h3>Workshop: Intro to PyTorch</h3>
-            <br />
-            <p>Hands-on session to learn deep learning fundamentals and build your first neural network using PyTorch.</p>
-            <br /><br />
-            <a href="#register" className="cta-button">Participate</a>
-          </div>
+          <motion.div
+            className="event-card"
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, ease: "easeOut" }}
+          >
+            <h3 className="event-title">Enigma Orientation 2025</h3>
+
+            <div className="event-details">
+              <p>
+                <strong>Date:</strong> 08th November 2025
+              </p>
+              <p>
+                <strong>Time:</strong> 10:00 PM – 3:30 PM
+              </p>
+              <p>
+                <strong>Venue:</strong> LNCT Main Auditorium
+              </p>
+            </div>
+
+            <p className="event-desc">
+              Kickstart your AIML journey with Enigma’s Orientation! Discover
+              what we do, meet the core team, and explore how you can learn,
+              build, and innovate with us throughout the year.
+            </p>
+
+            <a
+              href="https://lu.ma/enigma-orientation-2025"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="cta-button"
+            >
+              Register on Luma
+            </a>
+          </motion.div>
         </div>
       </section>
+      <br />
+      <br />
 
-      <br /><br /><br /><br />
-
+      {/* Featured Projects Section */}
       <section className="card-grid-section">
-        <h2>Featured Projects</h2>
+        <h2 className="section-title">Featured Projects</h2>
+
         <div className="card-grid">
-          <div className="card">
+          <motion.div
+            className="card"
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, ease: "easeOut" }}
+          >
             <h3>Smart Tourist Safety System</h3>
-            <p>An IoT + ML system for tourist safety with anomaly detection and multilingual alerts.</p>
-          </div>
-          <div className="card">
+            <p>
+              An IoT + ML system for tourist safety with anomaly detection and
+              multilingual alerts.
+            </p>
+          </motion.div>
+
+          <motion.div
+            className="card"
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.7, ease: "easeOut" }}
+          >
             <h3>Sentiment Analyzer</h3>
-            <p>A real-time social media sentiment pipeline using NLP and visual dashboards.</p>
-          </div>
-          <div className="card">
+            <p>
+              A real-time social media sentiment pipeline using NLP and visual
+              dashboards.
+            </p>
+          </motion.div>
+
+          <motion.div
+            className="card"
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, ease: "easeOut" }}
+          >
             <h3>Medical Image Classifier</h3>
-            <p>Prototype model to assist in screening using CNNs and explainability tools.</p>
-          </div>
-          <div className="card">
+            <p>
+              Prototype model to assist in screening using CNNs and
+              explainability tools.
+            </p>
+          </motion.div>
+
+          <motion.div
+            className="card"
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.9, ease: "easeOut" }}
+          >
             <h3>Recommender Engine</h3>
-            <p>Personalized recommendation system built with collaborative filtering and embeddings.</p>
-          </div>
+            <p>
+              Personalized recommendation system built with collaborative
+              filtering and embeddings.
+            </p>
+          </motion.div>
         </div>
       </section>
 
-      <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
 
       {/* Our Team Section */}
       <section className="our-team">
         <h2>Our Team</h2>
-        <br /><br />
-        
+        <br />
+        <br />
+
         {/* Coordinator Section 
         <div className="coordinator">
           <img src={Adarshsir} alt="Faculty Coordinator" />
@@ -136,19 +231,39 @@ const Home = () => {
         <div className="team-grid">
           {/* Team Member 1 */}
           <div className="team-member">
-            <img src={Priyanshu} alt="President - Enigma" />
+            <img src={oshika} alt="President - Enigma" />
             <h3>
-              Priyanshu Lohani
+              Oshika Jain
               <p>President</p>
-              <a href="https://www.linkedin.com/in/priyanshulohani/" target="_blank" rel="noopener noreferrer">
-                <FaLinkedin className="social-icon" /></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-              <a href="https://twitter.com/iamlohanip" target="_blank" rel="noopener noreferrer">
+              <a
+                href="https://www.linkedin.com/in/oshika-jain-977b29281/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FaLinkedin className="social-icon" />
+              </a>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <a
+                href="https://x.com/Oshika48526"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <FaTwitter className="social-icon" />
-              </a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-              <a href="https://github.com/PriDev07" target="_blank" rel="noopener noreferrer">
-                <FaGithub className="social-icon" /> 
-              </a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-              <a href="https://instagram.com/priyanshulohanii" target="_blank" rel="noopener noreferrer">
+              </a>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <a
+                href="https://github.com/jainoshika"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FaGithub className="social-icon" />
+              </a>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <a
+                href="https://www.instagram.com/oshikaa.a/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <FaInstagram className="social-icon" />
               </a>
             </h3>
@@ -163,15 +278,35 @@ const Home = () => {
             <h3>
               Rahul Lodhi
               <p>Vice President</p>
-              <a href="https://linkedin.com/in/rahullodhisdr" target="_blank" rel="noopener noreferrer">
-                <FaLinkedin className="social-icon" /></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-              <a href="https://twitter.com/Rahul_P_A_S" target="_blank" rel="noopener noreferrer">
+              <a
+                href="https://linkedin.com/in/rahullodhisdr"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FaLinkedin className="social-icon" />
+              </a>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <a
+                href="https://twitter.com/Rahul_P_A_S"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <FaTwitter className="social-icon" />
-              </a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-              <a href="https://github.com/RahulLodhi0405" target="_blank" rel="noopener noreferrer">
-                <FaGithub className="social-icon" /> 
-              </a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-              <a href="https://instagram.com/_rahul.lodhi_" target="_blank" rel="noopener noreferrer">
+              </a>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <a
+                href="https://github.com/RahulLodhi0405"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FaGithub className="social-icon" />
+              </a>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <a
+                href="https://instagram.com/_rahul.lodhi_"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <FaInstagram className="social-icon" />
               </a>
             </h3>
@@ -182,237 +317,401 @@ const Home = () => {
         </div>
       </section>
 
-      <br /><br /><br /><br />
-      {/*
-      <div className="coordinators-grid">
+      <div className="coordinators-grid coordinators-grid-senior">
         <div className="coordinator">
-          <img src={shreyansh} alt="Development Lead" />
-          <h3>Development Lead</h3>
+          <img src={shreyansh} alt="Tech Lead" />
+          <h3>Tech Lead</h3>
           <p>Shreyansh Pandit</p>
           <div className="social-media">
-            <a href="https://www.linkedin.com/in/shreyansh-pandit-1b47b2203/" target="_blank" rel="noopener noreferrer">
-              <FaLinkedin className="social-icon" /></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <a href="https://twitter.com/Shreyanshloop07" target="_blank" rel="noopener noreferrer">
+            <a
+              href="https://www.linkedin.com/in/shreyansh-pandit-1b47b2203/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaLinkedin className="social-icon" />
+            </a>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a
+              href="https://twitter.com/Shreyanshloop07"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <FaTwitter className="social-icon" />
-            </a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <a href="https://github.com/shreyansh-Geek" target="_blank" rel="noopener noreferrer">
-              <FaGithub className="social-icon" /> 
-            </a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+            </a>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a
+              href="https://github.com/shreyansh-Geek"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaGithub className="social-icon" />
+            </a>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a
+              href="https://instagram.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <FaInstagram className="social-icon" />
             </a>
           </div>
         </div>
 
         <div className="coordinator">
-          <img src={Adarsh} alt="Creative Head" />
-          <h3>Creative Head</h3>
-          <p>Adarsh Gupta</p>
+          <img src={vedant} alt="Research Head" />
+          <h3>Research Head</h3>
+          <p>Vedant Saubhri</p>
           <div className="social-media">
-            <a href="https://www.linkedin.com/in/idealgupta/" target="_blank" rel="noopener noreferrer">
-              <FaLinkedin className="social-icon" /></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
-              <FaTwitter className="social-icon" />
-            </a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <a href="https://github.com" target="_blank" rel="noopener noreferrer">
-              <FaGithub className="social-icon" /> 
-            </a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
-              <FaInstagram className="social-icon" />
+            <a
+              href="https://www.linkedin.com/in/vedant-saubhri-205910288/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaLinkedin className="social-icon" />
             </a>
-          </div>
-        </div>
-        
-        <div className="coordinator">
-          <img src={Adarsh} alt="Creative Head" />
-          <h3>Creative Head</h3>
-          <p>Adarsh Gupta</p>
-          <div className="social-media">
-            <a href="https://www.linkedin.com/in/idealgupta/" target="_blank" rel="noopener noreferrer">
-              <FaLinkedin className="social-icon" /></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a
+              href="https://x.com/vedant_7115?s=11"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <FaTwitter className="social-icon" />
-            </a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <a href="https://github.com" target="_blank" rel="noopener noreferrer">
-              <FaGithub className="social-icon" /> 
-            </a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
-              <FaInstagram className="social-icon" />
             </a>
-          </div>
-        </div>
-
-        <div className="coordinator">
-          <img src={Adarsh} alt="Creative Head" />
-          <h3>Creative Head</h3>
-          <p>Adarsh Gupta</p>
-          <div className="social-media">
-            <a href="https://www.linkedin.com/in/idealgupta/" target="_blank" rel="noopener noreferrer">
-              <FaLinkedin className="social-icon" /></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
-              <FaTwitter className="social-icon" />
-            </a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <a href="https://github.com" target="_blank" rel="noopener noreferrer">
-              <FaGithub className="social-icon" /> 
-            </a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a
+              href="https://github.com/vedant7115"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaGithub className="social-icon" />
+            </a>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a
+              href="https://www.instagram.com/vedant_7115/?igsh=MXg4czRlM2g1MmNqNQ%3D%3D#"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <FaInstagram className="social-icon" />
             </a>
           </div>
         </div>
 
         <div className="coordinator">
-          <img src={Adarsh} alt="Creative Head" />
-          <h3>Creative Head</h3>
-          <p>Adarsh Gupta</p>
+          <img src={jayesh} alt="Event Head" />
+          <h3>Event Head</h3>
+          <p>Jayesh Manjwani</p>
           <div className="social-media">
-            <a href="https://www.linkedin.com/in/idealgupta/" target="_blank" rel="noopener noreferrer">
-              <FaLinkedin className="social-icon" /></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
+            <a
+              href="https://www.linkedin.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaLinkedin className="social-icon" />
+            </a>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a
+              href="https://twitter.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <FaTwitter className="social-icon" />
-            </a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <a href="https://github.com" target="_blank" rel="noopener noreferrer">
-              <FaGithub className="social-icon" /> 
-            </a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+            </a>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a
+              href="https://github.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaGithub className="social-icon" />
+            </a>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a
+              href="https://instagram.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <FaInstagram className="social-icon" />
             </a>
           </div>
         </div>
 
         <div className="coordinator">
-          <img src={Adarsh} alt="Creative Head" />
-          <h3>Creative Head</h3>
-          <p>Adarsh Gupta</p>
+          <img src={dummy} alt="Event Manager" />
+          <h3>Social Media Manager</h3>
+          <p>Riya Palod</p>
           <div className="social-media">
-            <a href="https://www.linkedin.com/in/idealgupta/" target="_blank" rel="noopener noreferrer">
-              <FaLinkedin className="social-icon" /></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
-              <FaTwitter className="social-icon" />
-            </a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <a href="https://github.com" target="_blank" rel="noopener noreferrer">
-              <FaGithub className="social-icon" /> 
-            </a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
-              <FaInstagram className="social-icon" />
+            <a
+              href="https://www.linkedin.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaLinkedin className="social-icon" />
             </a>
-          </div>
-        </div>
-
-        <div className="coordinator">
-          <img src={Adarsh} alt="Creative Head" />
-          <h3>Creative Head</h3>
-          <p>Adarsh Gupta</p>
-          <div className="social-media">
-            <a href="https://www.linkedin.com/in/idealgupta/" target="_blank" rel="noopener noreferrer">
-              <FaLinkedin className="social-icon" /></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a
+              href="https://twitter.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <FaTwitter className="social-icon" />
-            </a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <a href="https://github.com" target="_blank" rel="noopener noreferrer">
-              <FaGithub className="social-icon" /> 
-            </a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
-              <FaInstagram className="social-icon" />
             </a>
-          </div>
-        </div>
-        <div className="coordinator">
-          <img src={Adarsh} alt="Creative Head" />
-          <h3>Creative Head</h3>
-          <p>Adarsh Gupta</p>
-          <div className="social-media">
-            <a href="https://www.linkedin.com/in/idealgupta/" target="_blank" rel="noopener noreferrer">
-              <FaLinkedin className="social-icon" /></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
-              <FaTwitter className="social-icon" />
-            </a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <a href="https://github.com" target="_blank" rel="noopener noreferrer">
-              <FaGithub className="social-icon" /> 
-            </a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
-              <FaInstagram className="social-icon" />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a
+              href="https://github.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaGithub className="social-icon" />
             </a>
-          </div>
-        </div>
-
-        <div className="coordinator">
-          <img src={Adarsh} alt="Creative Head" />
-          <h3>Creative Head</h3>
-          <p>Adarsh Gupta</p>
-          <div className="social-media">
-            <a href="https://www.linkedin.com/in/idealgupta/" target="_blank" rel="noopener noreferrer">
-              <FaLinkedin className="social-icon" /></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
-              <FaTwitter className="social-icon" />
-            </a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <a href="https://github.com" target="_blank" rel="noopener noreferrer">
-              <FaGithub className="social-icon" /> 
-            </a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
-              <FaInstagram className="social-icon" />
-            </a>
-          </div>
-        </div>
-
-        <div className="coordinator">
-          <img src={Adarsh} alt="Creative Head" />
-          <h3>Creative Head</h3>
-          <p>Adarsh Gupta</p>
-          <div className="social-media">
-            <a href="https://www.linkedin.com/in/idealgupta/" target="_blank" rel="noopener noreferrer">
-              <FaLinkedin className="social-icon" /></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
-              <FaTwitter className="social-icon" />
-            </a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <a href="https://github.com" target="_blank" rel="noopener noreferrer">
-              <FaGithub className="social-icon" /> 
-            </a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
-              <FaInstagram className="social-icon" />
-            </a>
-          </div>
-        </div>
-
-        <div className="coordinator">
-          <img src={Adarsh} alt="Creative Head" />
-          <h3>Creative Head</h3>
-          <p>Adarsh Gupta</p>
-          <div className="social-media">
-            <a href="https://www.linkedin.com/in/idealgupta/" target="_blank" rel="noopener noreferrer">
-              <FaLinkedin className="social-icon" /></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
-              <FaTwitter className="social-icon" />
-            </a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <a href="https://github.com" target="_blank" rel="noopener noreferrer">
-              <FaGithub className="social-icon" /> 
-            </a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
-              <FaInstagram className="social-icon" />
-            </a>
-          </div>
-        </div>
-
-        <div className="coordinator">
-          <img src={Adarsh} alt="Creative Head" />
-          <h3>Creative Head</h3>
-          <p>Adarsh Gupta</p>
-          <div className="social-media">
-            <a href="https://www.linkedin.com/in/idealgupta/" target="_blank" rel="noopener noreferrer">
-              <FaLinkedin className="social-icon" /></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
-              <FaTwitter className="social-icon" />
-            </a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <a href="https://github.com" target="_blank" rel="noopener noreferrer">
-              <FaGithub className="social-icon" /> 
-            </a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a
+              href="https://instagram.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <FaInstagram className="social-icon" />
             </a>
           </div>
         </div>
       </div>
 
+      <div className="coordinators-grid coordinators-grid-junior">
+        <div className="coordinator">
+          <img src={aadarsh} alt="Tech team" />
+          <h3>Tech Team</h3>
+          <p>Aadarsh Malviya</p>
+          <div className="social-media">
+            <a
+              href=" https://www.linkedin.com/in/aadarsh-malviya/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaLinkedin className="social-icon" />
+            </a>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a
+              href="https://x.com/Mlaa020321"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaTwitter className="social-icon" />
+            </a>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a
+              href="https://github.com/Malviyaaadarsh"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaGithub className="social-icon" />
+            </a>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a
+              href=" https://www.instagram.com/m.laa_21/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaInstagram className="social-icon" />
+            </a>
+          </div>
+        </div>
+
+        <div className="coordinator">
+          <img src={rafiya} alt="Research team" />
+          <h3>Research Team</h3>
+          <p>Rafiya Ansari</p>
+          <div className="social-media">
+            <a
+              href="https://www.linkedin.com/in/rafiya-ansari20/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaLinkedin className="social-icon" />
+            </a>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a
+              href="https://twitter.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaTwitter className="social-icon" />
+            </a>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a
+              href="https://github.com/vedant7115"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaGithub className="social-icon" />
+            </a>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a
+              href="https://www.instagram.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaInstagram className="social-icon" />
+            </a>
+          </div>
+        </div>
+
+        <div className="coordinator">
+          <img src={tanmay} alt="Event Manager" />
+          <h3>Event Manager</h3>
+          <p>Tanmay Parashar</p>
+          <div className="social-media">
+            <a
+              href="https://www.linkedin.com/in/tanmay-parashar-360642385/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaLinkedin className="social-icon" />
+            </a>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a
+              href="https://twitter.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaTwitter className="social-icon" />
+            </a>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a
+              href="https://github.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaGithub className="social-icon" />
+            </a>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a
+              href="https://www.instagram.com/sneegsneak/?igsh=MTNyN293Y2RmZ2UycA%3D%3D#"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaInstagram className="social-icon" />
+            </a>
+          </div>
+        </div>
+
+        <div className="coordinator">
+          <img src={tanu} alt="content writer" />
+          <h3>Content Writer</h3>
+          <p>Tanu Dubey</p>
+          <div className="social-media">
+            <a
+              href="https://www.linkedin.com/in/tanu-dubey-46886a2b6/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaLinkedin className="social-icon" />
+            </a>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a
+              href="https://twitter.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaTwitter className="social-icon" />
+            </a>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a
+              href="https://github.com/tanuDubey-077"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaGithub className="social-icon" />
+            </a>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a
+              href="https://www.instagram.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaInstagram className="social-icon" />
+            </a>
+          </div>
+        </div>
+
+        <div className="coordinator">
+          <img src={dummy} alt="Graphic Designer" />
+          <h3>Graphic Designer</h3>
+          <p>Anish Kumar</p>
+          <div className="social-media">
+            <a
+              href="https://www.linkedin.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaLinkedin className="social-icon" />
+            </a>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a
+              href="https://twitter.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaTwitter className="social-icon" />
+            </a>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a
+              href="https://github.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaGithub className="social-icon" />
+            </a>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a
+              href="https://instagram.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaInstagram className="social-icon" />
+            </a>
+          </div>
+        </div>
+
+        <div className="coordinator">
+          <img src={khushbu} alt="Event Manager" />
+          <h3>Video Editor</h3>
+          <p>Khushbu Patil</p>
+          <div className="social-media">
+            <a
+              href="https://www.linkedin.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaLinkedin className="social-icon" />
+            </a>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a
+              href="https://x.com/Khushbu121005?t=psp7BpkUFEfoNjKErltXUA&s=09 "
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaTwitter className="social-icon" />
+            </a>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a
+              href="https://github.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaGithub className="social-icon" />
+            </a>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a
+              href="https://instagram.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaInstagram className="social-icon" />
+            </a>
+          </div>
+        </div>
+      </div>
+
+      {/*
       <section className="contact-section">
         <motion.div
           className="contact-container"
@@ -612,15 +911,13 @@ const Home = () => {
   </div>
 </section>
 */}
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-
-      
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
 
       {/* Footer Section */}
       <footer>
@@ -645,27 +942,32 @@ const Home = () => {
           {/* Contact Information */}
           <div className="footer-contact">
             <h3>Contact Us</h3>
-            <p>Email: <a href="mailto:enigmaaimlclub@gmail.com">enigmaaimlclub@gmail.com</a></p>
-            <p>Phone: +91 12345 67890</p>
+            <p>
+              Email:{" "}
+              <a href="mailto:enigmaaimlclub@gmail.com">
+                enigmaaimlclub@gmail.com
+              </a>
+            </p>
+            <p>Phone: +91 93688 26185</p>
             <p>Location: LNCT College, Raisen Road, Bhopal - 462022</p>
           </div>
 
-        <div className="footer-map">
-  <iframe
-    title="club-location"
-    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d58652.430412086!2d77.44852714863279!3d23.251204200000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x397c4244c97d6f29%3A0x72457a4e85fd116c!2z4KSP4KSy4KSP4KSo4KS44KWA4KSf4KWAIOCkl-CljeCksOClgeCkqiDgpJHgpKsg4KSV4KWJ4KSy4KWH4KSc4KWH4KS4!5e0!3m2!1shi!2sin!4v1759560914642!5m2!1shi!2sin"
-    allowFullScreen=""
-    loading="lazy"
-    referrerPolicy="no-referrer-when-downgrade"
-  ></iframe>
-</div>
-
+          <div className="footer-map">
+            <iframe
+              title="club-location"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d58652.430412086!2d77.44852714863279!3d23.251204200000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x397c4244c97d6f29%3A0x72457a4e85fd116c!2z4KSP4KSy4KSP4KSo4KS44KWA4KSf4KWAIOCkl-CljeCksOClgeCkqiDgpJHgpKsg4KSV4KWJ4KSy4KWH4KSc4KWH4KS4!5e0!3m2!1shi!2sin!4v1759560914642!5m2!1shi!2sin"
+              allowFullScreen=""
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
         </div>
 
         <div className="footer-bottom">
           <p>&copy; 2025 Enigma – AIML Club | All Rights Reserved</p>
           <div className="footer-terms">
-            <a href="/privacy-policy">Privacy Policy</a> | <a href="/terms-of-service">Terms of Service</a>
+            <a href="/privacy-policy">Privacy Policy</a> |{" "}
+            <a href="/terms-of-service">Terms of Service</a>
           </div>
         </div>
       </footer>

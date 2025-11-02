@@ -1,8 +1,8 @@
-import React, { useState } from 'react';
-import { NavLink, useNavigate, useLocation } from 'react-router-dom';
-import './Navbar.css';
-import collegeLogo from '../Assets/CollegeLogo.png';
-import 'font-awesome/css/font-awesome.min.css';
+import React, { useState } from "react";
+import { NavLink, useNavigate, useLocation } from "react-router-dom";
+import "./Navbar.css";
+import collegeLogo from "../Assets/CollegeLogo.png";
+import "font-awesome/css/font-awesome.min.css";
 
 const Navbar = () => {
   const [isMobile, setIsMobile] = useState(false);
@@ -14,19 +14,17 @@ const Navbar = () => {
   return (
     <nav className="navbar">
       <div className="navbar-logo">
-        <a href="https://www.lnct.ac.in" target="_blank" rel="noopener noreferrer">
-          <img src={collegeLogo} alt="College Logo" className="college-logo" />
-        </a>
+        <img src={collegeLogo} alt="College Logo" className="college-logo" />
       </div>
       <ul
-        className={isMobile ? 'navbar-links-mobile' : 'navbar-links'}
+        className={isMobile ? "navbar-links-mobile" : "navbar-links"}
         onClick={() => setIsMobile(false)}
       >
         <li>
           <NavLink
             to="/"
             className={({ isActive }) =>
-              `navbar-link ${isActive ? 'active' : ''}`
+              `navbar-link ${isActive ? "active" : ""}`
             }
           >
             Home
@@ -36,7 +34,7 @@ const Navbar = () => {
           <NavLink
             to="/events"
             className={({ isActive }) =>
-              `navbar-link ${isActive ? 'active' : ''}`
+              `navbar-link ${isActive ? "active" : ""}`
             }
           >
             Events
@@ -46,7 +44,7 @@ const Navbar = () => {
           <NavLink
             to="/resources"
             className={({ isActive }) =>
-              `navbar-link ${isActive ? 'active' : ''}`
+              `navbar-link ${isActive ? "active" : ""}`
             }
           >
             Resources
@@ -56,7 +54,7 @@ const Navbar = () => {
           <NavLink
             to="/blog"
             className={({ isActive }) =>
-              `navbar-link ${isActive ? 'active' : ''}`
+              `navbar-link ${isActive ? "active" : ""}`
             }
           >
             Blog
@@ -66,7 +64,7 @@ const Navbar = () => {
           <NavLink
             to="/gallery"
             className={({ isActive }) =>
-              `navbar-link ${isActive ? 'active' : ''}`
+              `navbar-link ${isActive ? "active" : ""}`
             }
           >
             Gallery
@@ -76,7 +74,7 @@ const Navbar = () => {
           <NavLink
             to="/contact"
             className={({ isActive }) =>
-              `navbar-link ${isActive ? 'active' : ''}`
+              `navbar-link ${isActive ? "active" : ""}`
             }
           >
             Contact
@@ -86,7 +84,7 @@ const Navbar = () => {
           <NavLink
             to="/opportunities"
             className={({ isActive }) =>
-              `navbar-link ${isActive ? 'active' : ''}`
+              `navbar-link ${isActive ? "active" : ""}`
             }
           >
             Opportunities
@@ -96,7 +94,7 @@ const Navbar = () => {
           <NavLink
             to="/discussion"
             className={({ isActive }) =>
-              `navbar-link ${isActive ? 'active' : ''}`
+              `navbar-link ${isActive ? "active" : ""}`
             }
           >
             Discussion
@@ -106,7 +104,7 @@ const Navbar = () => {
           <NavLink
             to="/login"
             className={({ isActive }) =>
-              `navbar-link button-link ${isActive ? 'active' : ''}`
+              `navbar-link button-link ${isActive ? "active" : ""}`
             }
           >
             Login
@@ -117,11 +115,14 @@ const Navbar = () => {
         className="mobile-menu-icon"
         onClick={() => setIsMobile(!isMobile)}
       >
-        {isMobile ? <i className="fas fa-times"></i> : <i className="fas fa-bars"></i>}
+        {isMobile ? (
+          <i className="fas fa-times"></i>
+        ) : (
+          <i className="fas fa-bars"></i>
+        )}
       </button>
     </nav>
   );
 };
 
 export default Navbar;
-
