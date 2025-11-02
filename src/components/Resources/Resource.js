@@ -49,14 +49,14 @@ const resources = [
     description: 'A research group that makes deep learning more accessible with courses and libraries.',
     link: 'https://www.fast.ai/',
     type: 'Tutorial',
-    icon: 'https://avatars.githubusercontent.com/u/20402423?s=280&v=4',
+    icon: 'https://avatars.githubusercontent.com/u/20547620?s=200&v=4',
   },
   {
     title: 'OpenAI',
     description: 'AI research lab creating advanced AI models and tools like ChatGPT and DALL·E.',
     link: 'https://openai.com/',
     type: 'Platform',
-    icon: 'https://upload.wikimedia.org/wikipedia/commons/4/4e/OpenAI_Logo.svg',
+    icon: 'https://latestlogo.com/wp-content/uploads/2024/01/openai-icon.png',
   },
   {
     title: 'Scikit-learn',
@@ -70,14 +70,14 @@ const resources = [
     description: 'A collection of articles and tutorials on AI, ML, and deep learning.',
     link: 'https://medium.com/tag/artificial-intelligence',
     type: 'Blog',
-    icon: 'https://upload.wikimedia.org/wikipedia/commons/2/23/Medium_logo_Monogram.svg',
+    icon: 'https://miro.medium.com/fit/c/176/176/1*sHhtYhaCe2Uc3IU0IgKwIQ.png',
   },
   {
     title: 'DataCamp',
     description: 'An online platform to learn data science, Python, R, and machine learning interactively.',
     link: 'https://www.datacamp.com/',
     type: 'Platform',
-    icon: 'https://upload.wikimedia.org/wikipedia/commons/1/19/DataCamp_logo.svg',
+    icon: 'https://asset.brandfetch.io/idou89mSUh/id1KupYxXq.jpeg?updated=1680282023371',
   },
   {
     title: 'Keras',
@@ -91,7 +91,7 @@ const resources = [
     description: 'Provides AI education, courses, and specialization programs created by Andrew Ng.',
     link: 'https://www.deeplearning.ai/',
     type: 'Tutorial',
-    icon: 'https://upload.wikimedia.org/wikipedia/commons/0/02/Deeplearning.ai_logo.png',
+    icon: 'https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/http://coursera-university-assets.s3.amazonaws.com/b4/5cb90bb92f420b99bf323a0356f451/Icon.png?auto=format%2Ccompress&dpr=3&w=180&h=180',
   },
 ];
 

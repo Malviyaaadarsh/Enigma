@@ -8,6 +8,7 @@ import {
   FaGithub,
   FaTwitter,
   FaInstagram,
+  FaWhatsapp
 } from "react-icons/fa"; // Font Awesome Icons
 import Rahul from "../Assets/Rahul.png"; // Example team image (replace with actual)
 import Priyanshu from "../Assets/Priyanshu.png";
@@ -924,32 +925,16 @@ const Home = () => {
           {/* Social Links Section */}
           <div className="footer-social">
             <h3>Follow Us</h3>
-            <a
-              href="https://www.linkedin.com"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
+            <a href="https://www.linkedin.com/company/enigma-aiml-club/about/" target="_blank" rel="noopener noreferrer">
               <FaLinkedin className="social-icon" />
             </a>
-            <a
-              href="https://discord.com"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <FaDiscord className="social-icon" />
+            <a href="https://www.instagram.com/enigma_lnct" target="_blank" rel="noopener noreferrer">
+              <FaInstagram className="social-icon" />
             </a>
-            <a
-              href="https://github.com"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <FaGithub className="social-icon" />
+            <a href="https://chat.whatsapp.com/G2fdYwTNgdwAjg0mERGtfQ?mode=wwt" target="_blank" rel="noopener noreferrer">
+              <FaWhatsapp className="social-icon" />
             </a>
-            <a
-              href="https://twitter.com"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
+            <a href="https://x.com/enigma_lnct" target="_blank" rel="noopener noreferrer">
               <FaTwitter className="social-icon" />
             </a>
           </div>
