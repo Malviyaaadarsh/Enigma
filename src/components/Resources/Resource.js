@@ -70,7 +70,7 @@ const resources = [
     description: 'A collection of articles and tutorials on AI, ML, and deep learning.',
     link: 'https://medium.com/tag/artificial-intelligence',
     type: 'Blog',
-    icon: 'https://upload.wikimedia.org/wikipedia/commons/2/23/Medium_logo_Monogram.svg',
+    icon: 'https://miro.medium.com/fit/c/176/176/1*sHhtYhaCe2Uc3IU0IgKwIQ.png',
   },
   {
     title: 'DataCamp',
