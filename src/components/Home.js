@@ -315,6 +315,8 @@ const Home = () => {
             <div className="social-media"></div>
           </div>
         </div>
+
+        
       </section>
 
       <div className="coordinators-grid coordinators-grid-senior">
@@ -434,7 +436,8 @@ const Home = () => {
             </a>
           </div>
         </div>
-
+        
+{/*
         <div className="coordinator">
           <img src={dummy} alt="Event Manager" />
           <h3>Social Media Manager</h3>
@@ -473,6 +476,7 @@ const Home = () => {
             </a>
           </div>
         </div>
+        */}
       </div>
 
       <div className="coordinators-grid coordinators-grid-junior">
