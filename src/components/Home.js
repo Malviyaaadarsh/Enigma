@@ -737,6 +737,9 @@ const Home = () => {
         </div>
       </div>
 
+{/* Neon gradient line */}
+<div className="neon-divider"></div>
+
       {/*
       <section className="contact-section">
         <motion.div
@@ -767,7 +770,7 @@ const Home = () => {
           </form>
         </motion.div>
       </section>
-
+*/}
      <section className="sliding-images-section">
   <div className="sliding-images">
     <div className="image-container-left-to-right">
@@ -849,6 +852,8 @@ const Home = () => {
     </div>
   </div>
 </section>
+
+
 
 <section className="sliding-images-section">
   <div className="sliding-images">
@@ -936,7 +941,7 @@ const Home = () => {
     </div>
   </div>
 </section>
-*/}
+
       <br />
       <br />
       <br />

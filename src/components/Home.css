@@ -997,3 +997,17 @@ footer p {
   background-color: #007a99;
   box-shadow: 0 0 20px #00d4ff, 0 0 40px rgba(0, 212, 255, 0.7);
 }
+
+.neon-divider {
+  height: 4px;
+  width: 100%;
+  background: linear-gradient(90deg, #00c6ff, #0072ff);
+  border-radius: 10px;
+  margin: 40px 0;
+  box-shadow:
+    0 0 10px #00c6ff,
+    0 0 20px #00aaff,
+    0 0 40px #0072ff,
+    0 0 80px #0072ff;
+}
+
