@@ -31,11 +31,11 @@ const Home = () => {
       {/* Hero Section */}
       <section className="hero">
         {/* Logo Animation */}
-        <motion.div
+        <div
           className="logo-container"
           initial={{ x: "-100vw" }}
           animate={{ x: "0" }}
-          transition={{ type: "spring", stiffness: 30, duration: 4 }}
+          transition={{ type: "spring", stiffness: 0, duration: 0 }}
         >
           <img src={Logo} alt="Enigma Logo" className="cp-logo" />
           <div className="club-info">
@@ -46,7 +46,7 @@ const Home = () => {
               intelligent systems.
             </p>
           </div>
-        </motion.div>
+        </div>
       </section>
 
       {/* About Us Section */}
@@ -303,7 +303,7 @@ const Home = () => {
               </a>
               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
               <a
-                href="https://instagram.com/_rahul.lodhi_"
+                href="https://instagram.com/rahullodhi.27"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -402,7 +402,7 @@ const Home = () => {
           <p>Jayesh Manjwani</p>
           <div className="social-media">
             <a
-              href="https://www.linkedin.com"
+              href="https://www.linkedin.com/in/jayeshmanjwani"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -418,7 +418,7 @@ const Home = () => {
             </a>
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <a
-              href="https://github.com"
+              href="https://github.com/jayeshmanjwani"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -426,7 +426,7 @@ const Home = () => {
             </a>
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <a
-              href="https://instagram.com"
+              href="https://instagram.com/jayeshmanjwani"
               target="_blank"
               rel="noopener noreferrer"
             >

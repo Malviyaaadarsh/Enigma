@@ -357,7 +357,7 @@ br
   height: auto;
   margin-bottom: 20px;
  
-  animation: float 4s ease-in-out infinite, glow 3s ease-in-out infinite;
+  animation:/*float 4s ease-in-out infinite*/ glow 3s ease-in-out infinite;
 }
 
 .club-info {
@@ -834,7 +834,10 @@ footer p {
     text-shadow: none;
   }
 }
-
+/* related resource: Home.css:854:2 */
+.cp-logo { /* the element was img.cp-logo */
+  position: static;
+}
 
 .background-layer {
   position: fixed;
@@ -854,13 +857,13 @@ footer p {
 }.cp-logo {
   max-width: 200px;
   height: auto;
-  animation: rotate 10s infinite linear, float 4s ease-in-out infinite, colorChange 8s infinite alternate; /* Adding color change animation */
+  /* animation: rotate 10s infinite linear, float 4s ease-in-out infinite, colorChange 8s infinite alternate; Adding color change animation */
  /* Neon blue glow */
   transition: transform 0.6s ease, filter 0.4s ease; /* Smooth hover transition */
 }
 
 .cp-logo:hover {
-  transform: scale(1.1) rotate(15deg); /* 3D rotation effect on hover */
+  transform: scale(1.1) rotate(1deg); /* 3D rotation effect on hover */
   filter: drop-shadow(0 0 40px #00d4ff); /* Stronger neon glow on hover */
 }
 
