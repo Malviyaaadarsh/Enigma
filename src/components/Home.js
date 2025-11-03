@@ -229,6 +229,27 @@ const Home = () => {
         */}
         {/* Team Grid */}
         <div className="team-grid">
+           <div className="team-member">
+            <img src={Priyanshu} alt="President - Enigma" />
+            <h3>
+              Priyanshu Lohani
+              <p>Founder</p>
+              <a href="https://www.linkedin.com/in/priyanshulohani/" target="_blank" rel="noopener noreferrer">
+                <FaLinkedin className="social-icon" /></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <a href="https://twitter.com/iamlohanip" target="_blank" rel="noopener noreferrer">
+                <FaTwitter className="social-icon" />
+              </a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <a href="https://github.com/PriDev07" target="_blank" rel="noopener noreferrer">
+                <FaGithub className="social-icon" /> 
+              </a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <a href="https://instagram.com/priyanshulohanii" target="_blank" rel="noopener noreferrer">
+                <FaInstagram className="social-icon" />
+              </a>
+            </h3>
+
+            <p className="role">President</p>
+            <div className="social-media"></div>
+         </div>
           {/* Team Member 1 */}
           <div className="team-member">
             <img src={oshika} alt="President - Enigma" />
@@ -314,9 +335,10 @@ const Home = () => {
             <p className="role">Vice President</p>
             <div className="social-media"></div>
           </div>
-        </div>
-
         
+       
+           
+         </div>
       </section>
 
       <div className="coordinators-grid coordinators-grid-senior">
