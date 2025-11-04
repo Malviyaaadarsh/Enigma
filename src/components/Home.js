@@ -12,7 +12,7 @@ import {
 } from "react-icons/fa"; // Font Awesome Icons
 import Rahul from "../Assets/Rahul.png"; // Example team image (replace with actual)
 import Priyanshu from "../Assets/Priyanshu.png";
-import Adarshsir from "../Assets/Adarshsir.png";
+import triptimam from "../Assets/triptimam.jpeg";
 import oshika from "../Assets/oshika.jpeg";
 import about from "../Assets/aboutnew.png";
 import shreyansh from "../Assets/shreyanshp.png";
@@ -24,6 +24,8 @@ import rafiya from "../Assets/rafiya.jpg";
 import tanmay from "../Assets/tanmay.jpg";
 import tanu from "../Assets/tanu.jpg";
 import khushbu from "../Assets/khushbu.jpg";
+import kashish from "../Assets/kashish.jpg";
+import anish from "../Assets/anish.jpg";
 
 const Home = () => {
   return (
@@ -113,7 +115,7 @@ const Home = () => {
             </p>
 
             <a
-              href="https://lu.ma/enigma-orientation-2025"
+              href="https://luma.com/bootkui1"
               target="_blank"
               rel="noopener noreferrer"
               className="cta-button"
@@ -204,13 +206,12 @@ const Home = () => {
         <br />
         <br />
 
-        {/* Coordinator Section 
         <div className="coordinator">
-          <img src={Adarshsir} alt="Faculty Coordinator" />
-          <h3>Coordinator</h3>
-          <p>Prof. Adarsh Raushan</p>
+          <img src={triptimam} alt="Faculty Coordinator" />
+          <h3>Dr. Tripti Saxena</h3>
+          <p>Faculty Coordinator</p>
           <div className="social-media">
-            <a href="https://www.linkedin.com/in/adarsh-raushan-a0ba89141/" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.linkedin.com/in/dr-tripti-saxena-3b4a9018b/" target="_blank" rel="noopener noreferrer">
               <FaLinkedin className="social-icon" /></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
               <FaTwitter className="social-icon" />
@@ -224,9 +225,7 @@ const Home = () => {
           </div>
         </div>
 
-        <br /><br />
-
-        */}
+       
         {/* Team Grid */}
         <div className="team-grid">
            <div className="team-member">
@@ -502,6 +501,46 @@ const Home = () => {
       </div>
 
       <div className="coordinators-grid coordinators-grid-junior">
+
+        <div className="coordinator">
+          <img src={kashish} alt="Tech team" />
+          <h3>Secretary</h3>
+          <p>Kashish Kamaal</p>
+          <div className="social-media">
+            <a
+              href="https://www.linkedin.com/in/kashishkamaal"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaLinkedin className="social-icon" />
+            </a>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a
+              href="https://x.com/KashishKamaal?t=01F-8pQdCBHvb7VfUfi3RA&s=09"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaTwitter className="social-icon" />
+            </a>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a
+              href="https://github.com/its-kashishk"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaGithub className="social-icon" />
+            </a>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a
+              href="https://www.instagram.com/its.kashishk/?igsh=MXN6MG91NGhzYzFlbA%3D%3D#"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaInstagram className="social-icon" />
+            </a>
+          </div>
+        </div>
+
         <div className="coordinator">
           <img src={aadarsh} alt="Tech team" />
           <h3>Tech Team</h3>
@@ -659,7 +698,7 @@ const Home = () => {
         </div>
 
         <div className="coordinator">
-          <img src={dummy} alt="Graphic Designer" />
+          <img src={anish} alt="Graphic Designer" />
           <h3>Graphic Designer</h3>
           <p>Anish Kumar</p>
           <div className="social-media">
@@ -688,7 +727,7 @@ const Home = () => {
             </a>
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <a
-              href="https://instagram.com"
+              href=" https://www.instagram.com/mr.ak_r_a_j_p_u_t?igsh=OWIxeWk4dnpqM2h0"
               target="_blank"
               rel="noopener noreferrer"
             >
