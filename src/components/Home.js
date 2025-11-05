@@ -110,7 +110,7 @@ const Home = () => {
           </p>
 
           <a 
-            href="https://lu.ma/enigma-orientation-2025" 
+            href="https://luma.com/bootkui1" 
             target="_blank" 
             rel="noopener noreferrer" 
             className="event-btn"
@@ -120,7 +120,7 @@ const Home = () => {
         </div>
       </div>
     </section>
-    
+
       <br />
       <br />
       {/* Featured Projects Section */}
