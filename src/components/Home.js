@@ -26,6 +26,8 @@ import tanu from "../Assets/tanu.jpg";
 import khushbu from "../Assets/khushbu.jpg";
 import kashish from "../Assets/kashish.jpg";
 import anish from "../Assets/anish.jpg";
+import poster from "../Assets/poster.jpg";
+
 
 const Home = () => {
   return (
@@ -84,50 +86,43 @@ const Home = () => {
       </section>
 
       {/* Upcoming Events Section */}
-      <section className="events">
-        <h2 className="section-title">Upcoming Events</h2>
+      <section className="events-section" id="events">
+      <h2 className="events-title">Upcoming Events</h2>
 
-        <div className="event-cards">
-          <motion.div
-            className="event-card"
-            initial={{ opacity: 0, y: 50 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, ease: "easeOut" }}
-          >
-            <h3 className="event-title">Enigma Orientation 2025</h3>
-
-            <div className="event-details">
-              <p>
-                <strong>Date:</strong> 08th November 2025
-              </p>
-              <p>
-                <strong>Time:</strong> 10:00 PM – 3:30 PM
-              </p>
-              <p>
-                <strong>Venue:</strong> LNCT Main Auditorium
-              </p>
-            </div>
-
-            <p className="event-desc">
-              Kickstart your AIML journey with Enigma’s Orientation! Discover
-              what we do, meet the core team, and explore how you can learn,
-              build, and innovate with us throughout the year.
-            </p>
-
-            <a
-              href="https://luma.com/bootkui1"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="cta-button"
-            >
-              Register on Luma
-            </a>
-          </motion.div>
+      <div className="event-card">
+        <div className="event-image">
+          <img src={poster} alt="Enigma Orientation Poster" />
         </div>
-      </section>
-      <br />
-      <br />
 
+        <div className="event-info">
+          <h3>Enigma Orientation 2025</h3>
+
+          <ul>
+            <li><strong>Date:</strong> 08 November 2025</li>
+            <li><strong>Time:</strong> 10:00 AM – 1:00 PM</li>
+            <li><strong>Venue:</strong> Vikram Sarabhai Auditorium, LNCT</li>
+          </ul>
+
+          <p className="event-desc">
+            Kickstart your AIML journey with Enigma’s Orientation! Discover what we do, 
+            meet the core team, and explore how you can learn, build, and innovate with 
+            us throughout the year.
+          </p>
+
+          <a 
+            href="https://lu.ma/enigma-orientation-2025" 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            className="event-btn"
+          >
+            Register on Luma
+          </a>
+        </div>
+      </div>
+    </section>
+    
+      <br />
+      <br />
       {/* Featured Projects Section */}
       <section className="card-grid-section">
         <h2 className="section-title">Featured Projects</h2>
