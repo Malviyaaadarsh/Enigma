@@ -75,10 +75,10 @@ const Navbar = () => {
         </li>
         <li>
           <NavLink
-            to="/opportunities"
+            to="/leaderboard"
             className={({ isActive }) => `navbar-link ${isActive ? "active" : ""}`}
           >
-            Opportunities
+            Leaderboard
           </NavLink>
         </li>
         <li>

@@ -9,13 +9,13 @@ import Events from './components/events/Event';
 import Resources from './components/Resources/Resource';
 import Blog from './components/Blog/Blog';
 import Contact from './components/contact/Contact';
-import Opportunities from './components/Opportunities/Opportunities';
 import LoginPage from './components/Login/Login';
 import SignUpPage from './components/SignUp/Signup';
 import Profile from './components/Profile/profile';
 import DiscussionPage from './components/Discussion/Discussion';
 import { ToastContainer } from 'react-toastify';
 import {AuthProvider} from './Context/AuthContext';
+import Leaderboard from './components/Opportunities/Leaderboard.js';
 
 
 function App() {
@@ -35,7 +35,7 @@ function App() {
           <Route path="/resources" element={<Resources />} /> 
           <Route path="/blog" element={<Blog />} /> 
           <Route path="/contact" element={<Contact/>} /> 
-          <Route path="/opportunities" element={<Opportunities/>} /> 
+          <Route path="/leaderboard" element={<Leaderboard/>} /> 
           <Route path="/login" element={<LoginPage/>} />
           <Route path="/signup" element={<SignUpPage/>} />  
           <Route path="/profile" element={<Profile />} />
