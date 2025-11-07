@@ -27,6 +27,10 @@ import khushbu from "../Assets/khushbu.jpg";
 import kashish from "../Assets/kashish.jpg";
 import anish from "../Assets/anish.jpg";
 import poster from "../Assets/poster.jpg";
+import vision from "../Assets/targeting.png";
+import mission from "../Assets/mission.png";
+import objective from "../Assets/trophy.png";
+
 
 
 const Home = () => {
@@ -53,73 +57,117 @@ const Home = () => {
         </div>
       </section>
 
-      {/* About Us Section */}
-      <section className="about-us" id="about">
-        <div className="about-wrapper">
-          <motion.div
-            className="about-image"
-            initial={{ opacity: 0, y: 40 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1.2, ease: "easeOut" }}
-            viewport={{ once: true }}
-          >
-            <img src={about} alt="About Enigma" />
-          </motion.div>
+      {/* About Section */}
+<section className="about-us" id="about">
+  <motion.div
+    className="about-header"
+    initial={{ opacity: 0, y: 40 }}
+    whileInView={{ opacity: 1, y: 0 }}
+    transition={{ duration: 1.2, ease: "easeOut" }}
+    viewport={{ once: true }}
+  >
+    <h2>About the Club</h2>
+    <p>
+      We empower students to explore Artificial Intelligence and Machine Learning 
+      through hands-on workshops, collaborative open-source projects, competitive hackathons, 
+      and impactful research initiatives.
+    </p>
+  </motion.div>
 
-          <motion.div
-            className="about-content"
-            initial={{ opacity: 0, y: 40 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1.2, delay: 0.2, ease: "easeOut" }}
-            viewport={{ once: true }}
-          >
-            <h2>About Us</h2>
-            <p>
-              Enigma is a community of students passionate about Artificial
-              Intelligence, Machine Learning, and Data Science. We focus on
-              hands-on learning through workshops, projects, and hackathons,
-              empowering members to explore, create, and collaborate on
-              real-world AI innovations.
-            </p>
-          </motion.div>
-        </div>
-      </section>
+  <div className="about-grid">
+    {/* Vision */}
+    <motion.div
+      className="about-card"
+      initial={{ opacity: 0, y: 40 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 1, delay: 0.1 }}
+      viewport={{ once: true }}
+    >
+      <div className="about-icon">
+        <img src={vision} alt="Vision Icon" />
+      </div>
+      <h3>Vision</h3>
+      <p>
+        To inspire a generation of thinkers, builders, and dreamers who use AI and ML to create a smarter, more meaningful world.
+      </p>
+    </motion.div>
+
+    {/* Mission */}
+    <motion.div
+      className="about-card"
+      initial={{ opacity: 0, y: 40 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 1, delay: 0.2 }}
+      viewport={{ once: true }}
+    >
+      <div className="about-icon">
+        <img src={mission} alt="Mission Icon" />
+      </div>
+      <h3>Mission</h3>
+      <p>
+        We aim to build a community where learning is not a race, but a journey — where every idea matters, and every learner grows with purpose.
+      </p>
+    </motion.div>
+
+    {/* Objectives */}
+    <motion.div
+      className="about-card"
+      initial={{ opacity: 0, y: 40 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 1, delay: 0.3 }}
+      viewport={{ once: true }}
+    >
+      <div className="about-icon">
+        <img src={objective} alt="Objectives Icon" />
+      </div>
+      <h3>Objectives</h3>
+      <p>
+        Host events, build projects, publish research, and connect with industry partners.
+      </p>
+    </motion.div>
+  </div>
+</section>
 
       {/* Upcoming Events Section */}
-      <section className="events-section" id="events">
-      <h2 className="events-title">Upcoming Events</h2>
+      {/* Upcoming Events Section */}
+<section className="events-section" id="events">
+  <h2 className="events-title">Upcoming Events</h2>
 
-      <div className="event-card">
-        <div className="event-image">
-          <img src={poster} alt="Enigma Orientation Poster" />
-        </div>
-
-        <div className="event-info">
-          <h3>Enigma Orientation 2025</h3>
-
-          <ul>
-            <li><strong>Date:</strong> 08 November 2025</li>
-            <li><strong>Time:</strong> 10:00 AM – 1:00 PM</li>
-            <li><strong>Venue:</strong> Vikram Sarabhai Auditorium, LNCT</li>
-          </ul>
-
-          <p className="event-desc">
-            Kickstart your AIML journey with Enigma’s Orientation! Discover what we do, 
-            meet the core team, and explore how you can learn, build, and innovate with 
-            us throughout the year.
-          </p>
-
-          <a 
-            href="https://luma.com/bootkui1" 
-            target="_blank" 
-            rel="noopener noreferrer" 
-            className="event-btn"
-          >
-            Register on Luma
-          </a>
-        </div>
+  <div className="event-card">
+    {/* single inner row that holds two side-by-side divs */}
+    <div className="event-row">
+      <div className="event-left">
+        <img src={poster} alt="Enigma Orientation Poster" />
       </div>
-    </section>
+
+      <div className="event-right">
+        <h3>Enigma Orientation 2025</h3>
+
+        <ul>
+          <li><strong>Date:</strong> 08 November 2025</li>
+          <li><strong>Time:</strong> 10:00 AM – 1:00 PM</li>
+          <li><strong>Venue:</strong> Vikram Sarabhai Auditorium, LNCT</li>
+        </ul>
+
+        <p className="event-desc">
+          Kickstart your AIML journey with Enigma’s Orientation! Discover what we do,
+          meet the core team, and explore how you can learn, build, and innovate with
+          us throughout the year.
+        </p>
+
+        <a
+          href="https://luma.com/bootkui1"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="event-btn"
+        >
+          Register on Luma
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
 
       <br />
       <br />
@@ -214,7 +262,7 @@ const Home = () => {
             <a href="https://github.com" target="_blank" rel="noopener noreferrer">
               <FaGithub className="social-icon" /> 
             </a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <a href="https://instagram.com/adarshraushan1995" target="_blank" rel="noopener noreferrer">
+            <a href="" target="_blank" rel="noopener noreferrer">
               <FaInstagram className="social-icon" />
             </a>
           </div>
