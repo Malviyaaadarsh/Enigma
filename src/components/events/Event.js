@@ -3,13 +3,27 @@ import Countdown from '../Countdown/Countdown';
 import './Event.css';
 
 const events = [
+  { 
+    title: 'Enigma CP Cohort 2026',
+    date: '2026-01-05T00:00:00',
+    description:'Community Cohort for CP Practitioners',
+    link: 'https://forms.gle/XGm33VqJthW12XSm8',
+    status:'open',
+  },
+  {
+    title: 'Enigma Open-Source Program',
+    date: '2026-01-05T00:00:00',
+    description:'Build with us with the power of Open Source. Research grade, ML based projects from the Enigma Community.',  
+    link:'https://forms.gle/XGm33VqJthW12XSm8',
+    status:'open',
+  },
   {
     title: 'Enigma Orientation 2025',
     date: '2025-11-08T10:00:00',
     description:
       'Kickstart your AIML journey with Enigma’s Orientation! Discover what we do, meet the core team, and explore how you can learn, build, and innovate with us throughout the year.',
     link: 'https://luma.com/bootkui1',
-    status: 'open',
+    status: 'closed',
   },
   {
     title: 'GenAI Hackathon 2025',
@@ -17,7 +31,7 @@ const events = [
     description:
       'Participate in our flagship Generative AI Hackathon — build innovative AI solutions and collaborate with the best minds.',
     link: 'https://forms.gle/XGm33VqJthW12XSm8',
-    status: 'open',
+    status: 'closed',
   },
   {
     title: 'Kaggle ML Competition',
@@ -25,7 +39,7 @@ const events = [
     description:
       'Join our Kaggle-style machine learning challenge. Train models, optimize accuracy, and climb the leaderboard.',
     link: 'https://forms.gle/XGm33VqJthW12XSm8',
-    status: 'open',
+    status: 'closed',
   },
   {
     title: 'AI Model Sprint',
